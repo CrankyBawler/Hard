@@ -9,12 +9,12 @@ public class Main {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println( i + ": ping pong");}
             if (i % 5 != 0 && i % 3 == 0 ) {
-                    System.out.println(i + ": ping");
+                System.out.println(i + ": ping");
                 }
-                if (i % 5 == 0 && i % 3  != 0){
-                    System.out.println(i + ": pong");
+            if (i % 5 == 0 && i % 3  != 0){
+                System.out.println(i + ": pong");
             }
-                if (i % 5 != 0 && i % 3 !=0){
+            if (i % 5 != 0 && i % 3 !=0){
                 System.out.println(i + ":");
             }
         }
