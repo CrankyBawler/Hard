@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
     }
 
     public static void task1() {
@@ -19,4 +20,14 @@ public class Main {
             }
         }
     }
+    public static void task2() {
+        System.out.println("1.4 Циклы. Повышенная сложность Задача 5");
+        int a = 0;
+        int b = 1;
+        for (int i = 1; i <= 5; i++){
+            System.out.print(a + " " + b + " ");
+            a = a + b;
+            b = a +b;
+        }
+        }
 }
