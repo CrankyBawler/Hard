@@ -40,14 +40,15 @@ public class Main {
     public static void task3() {
         System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 5");
         int[][] array = new int[3][3];
-        array[0][0] = array[1][1] = array[2][2] = array[0][2] = array[2][0] = 2;
-        for (int i = 0; i < array.length; i++) {
-            for (int a = 0; a < array[i].length; a++) {
-                System.out.print(array[i][a] + " ");
+        array[0][0] = array[1][1] = array[2][2] = array[0][2] = array[2][0] = 1;
+        for (int[] row : array) {
+            for (int column : row) {
+                System.out.print(column + " ");
             }
             System.out.println();
         }
     }
+
 
     public static void task4() {
         System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 6");
