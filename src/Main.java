@@ -6,6 +6,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -63,5 +64,17 @@ public class Main {
             a = a - 1;
         }
         System.out.println(Arrays.toString(arr));
+    }
+
+    public static void task5() {
+        System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 7");
+        int[] arr = {5, 4, 3, 2, 1};
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(arr[i]);
+            } else {
+                System.out.print(+arr[i] + ", ");
+            }
+        }
     }
 }
