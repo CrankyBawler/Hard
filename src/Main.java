@@ -56,12 +56,12 @@ public class Main {
         int[] arr = new int[5];
         System.out.println(Arrays.toString(arr1));
         int i = 0;
-        int a = arr.length -1;
-        while (i < arr1.length && a >= 0){
-            arr [i] = arr1[a];
-        i = i +1;
-        a = a -1;
-                }
+        int a = arr.length - 1;
+        while (i < arr1.length && a >= 0) {
+            arr[i] = arr1[a];
+            i = i + 1;
+            a = a - 1;
+        }
         System.out.println(Arrays.toString(arr));
     }
 }
