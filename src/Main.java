@@ -36,15 +36,20 @@ public class Main {
             a = a + b;
             b = a + b;
         }
+        System.out.println("");
     }
 
     public static void task3() {
         System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 5");
-        int[][] array = new int[3][3];
-        array[0][0] = array[1][1] = array[2][2] = array[0][2] = array[2][0] = 1;
-        for (int[] row : array) {
-            for (int column : row) {
-                System.out.print(column + " ");
+        int[][] array2D = new int[3][3];
+        for (int i = 0; i < array2D.length; i++) {
+            for (int j = 0; j < array2D[i].length; j++) {
+                if ((i + j) % 2 == 0) {
+                    array2D[i][j] = 1;
+                } else {
+                    array2D[i][j] = 0;
+                }
+                System.out.print(array2D[i][j] + " ");
             }
             System.out.println();
         }
