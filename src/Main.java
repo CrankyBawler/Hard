@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -7,6 +6,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
 
     public static void task1() {
@@ -81,5 +82,27 @@ public class Main {
                 System.out.print(+arr[i] + ", ");
             }
         }
+    }
+
+    public static void task6() {
+        System.out.println("1.5 - 1.6 Массивы. Очень сложно. Задание 8");
+        int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        for (int i = 0; i < arr.length - 1; i++)
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[i] + arr[j] == -2) {
+                    System.out.println(arr[i] + " , " + arr[j]);
+                }
+            }
+    }
+
+    public static void task7() {
+        System.out.println("1.5 - 1.6 Массивы. Очень сложно. Задание 9");
+        int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        for (int i = 0; i < arr.length - 1; i++)
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[i] + arr[j] == -2) {
+                    System.out.println(arr[i] + " , " + arr[j]);
+                }
+            }
     }
 }
