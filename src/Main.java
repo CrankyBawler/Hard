@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -9,6 +11,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
+        task10();
     }
 
     public static void task1() {
@@ -118,10 +122,18 @@ public class Main {
         System.out.println("Имя сотрудника" + firstName);
         System.out.println("Фамилия сотрудника " + lastName);
         System.out.println("Отчество сотрудника" + middleName);
-
     }
+    public static void task9() {
+        System.out.println("1.7 Строки. Повышенная сложность. Задание 6");
+        String fullName = "ivanov ivan ivanovich";
 
-        }
+
+            }
+
+    public static void task10() {
+        System.out.println("1.7 Строки. Повышенная сложность. Задание 7");
+
+}
 
 
 
