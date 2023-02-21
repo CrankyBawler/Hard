@@ -8,6 +8,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -90,7 +91,7 @@ public class Main {
         for (int i = 0; i < arr.length - 1; i++)
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[i] + arr[j] == -2) {
-                System.out.println(arr[i] + " , " + arr[j]);
+                    System.out.println(arr[i] + " , " + arr[j]);
                 }
             }
     }
@@ -105,4 +106,49 @@ public class Main {
                 }
             }
     }
-}
+
+    public static void task8() {
+        System.out.println("1.7 Строки. Повышенная сложность. Задание 5");
+        String fullName = "Ivanov Ivan Ivanovich";
+        int index1 = fullName.indexOf(' ');
+        int index2 = fullName.lastIndexOf(' ');
+        String lastName = fullName.substring(0, index1);
+        String firstName = fullName.substring(index1, index2);
+        String middleName = fullName.substring(index2, fullName.length());
+        System.out.println("Имя сотрудника" + firstName);
+        System.out.println("Фамилия сотрудника " + lastName);
+        System.out.println("Отчество сотрудника" + middleName);
+
+    }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
