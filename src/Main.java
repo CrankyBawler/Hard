@@ -1,7 +1,17 @@
 import java.util.Arrays;
-import java.util.Locale;
 
 public class Main {
+    public static int[] arr(int[] a) {
+        for (int i = a.length - 1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(a[i] + ", ");
+            } else {
+                System.out.print(a[i]);
+            }
+        }
+        return a;
+    }
+
     public static void main(String[] args) {
         task1();
         task2();
@@ -13,6 +23,8 @@ public class Main {
         task8();
         task9();
         task10();
+        task11();
+        task12();
     }
 
     public static void task1() {
@@ -123,18 +135,30 @@ public class Main {
         System.out.println("Фамилия сотрудника " + lastName);
         System.out.println("Отчество сотрудника" + middleName);
     }
+
     public static void task9() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 6");
         String fullName = "ivanov ivan ivanovich";
 
 
-            }
+    }
 
     public static void task10() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 7");
 
-}
+    }
 
+    public static void task11() {
+        System.out.println("1.7 Строки. Повышенная сложность. Задание 8");
+
+    }
+
+    public static void task12() {
+        System.out.println("1.8 Методы. Повышенный уровень. Задание 4");
+        int[] array = {3, 2, 1, 6, 5};
+        arr(array);
+    }
+}
 
 
 
