@@ -22,6 +22,27 @@ public class Main {
         }
     }
 
+    public static int[] generateRandomArray() {
+        java.util.Random random = new java.util.Random();
+        int[] arr = new int[30];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100_000) + 100_000;
+        }
+        return arr;
+    }
+
+    public static int sum(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            sum = sum + i;
+        }
+        return sum;
+    }
+
+    public static double average(int [] arr) {
+        return (double) sum (arr) / arr.length;
+    }
+
     public static void main(String[] args) {
         task1();
         task2();
@@ -217,7 +238,11 @@ public class Main {
 
     public static void task14() {
         System.out.println("1.8 Методы. Повышенный уровень. Задание 4");
-    }
+        int[] arr = generateRandomArray();
+        int sum = sum(arr);
+        double avg = average(arr);
+        System.out.println(avg);
+            }
 }
 
 
