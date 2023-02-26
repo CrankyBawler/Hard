@@ -168,12 +168,27 @@ public class Main {
 
     public static void task10() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 7");
-
+        String first = "135";
+        String second = "246";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < first.length(); i++) {
+            sb.append(first.charAt(i));
+            sb.append(second.charAt(i));
+        }
+        System.out.println("Данные строки " + sb);
+        System.out.println();
     }
 
     public static void task11() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 8");
-
+        String findDuplicates = "aabccddefgghiijjkk";
+        for (int i = 0; i < findDuplicates.length()-1; i++) {
+            char[] ch = findDuplicates.toCharArray();
+            if (ch[i] == ch[i + 1]) {
+                System.out.print(ch[i]);
+            }
+        }
+        System.out.println();
     }
 
     public static void task12() {
