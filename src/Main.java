@@ -12,6 +12,16 @@ public class Main {
         return a;
     }
 
+    public static void toRepeats(String rep) {
+        char[] result = rep.toCharArray();
+        for (int i = 0; i < result.length - 1; i++) {
+            if (result[i] == result[i + 1]) {
+                System.out.println("В строке есть повторяющийся символ " + result[i]);
+            }
+                System.out.println("Дублей нет");
+        }
+    }
+
     public static void main(String[] args) {
         task1();
         task2();
@@ -25,6 +35,8 @@ public class Main {
         task10();
         task11();
         task12();
+        task13();
+        task14();
     }
 
     public static void task1() {
@@ -92,7 +104,7 @@ public class Main {
     public static void task5() {
         System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 7");
         int[] arr = {5, 4, 3, 2, 1};
-        int rightIndex = arr.length-1;
+        int rightIndex = arr.length - 1;
         int leftIndex = 0;
         int temp;
         while (leftIndex < rightIndex) {
@@ -104,7 +116,7 @@ public class Main {
         }
         System.out.println(Arrays.toString(arr));
         System.out.println();
-        }
+    }
 
     public static void task6() {
         System.out.println("1.5 - 1.6 Массивы. Очень сложно. Задание 8");
@@ -182,7 +194,7 @@ public class Main {
     public static void task11() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 8");
         String findDuplicates = "aabccddefgghiijjkk";
-        for (int i = 0; i < findDuplicates.length()-1; i++) {
+        for (int i = 0; i < findDuplicates.length() - 1; i++) {
             char[] ch = findDuplicates.toCharArray();
             if (ch[i] == ch[i + 1]) {
                 System.out.print(ch[i]);
@@ -195,6 +207,16 @@ public class Main {
         System.out.println("1.8 Методы. Повышенный уровень. Задание 4");
         int[] array = {3, 2, 1, 6, 5};
         arr(array);
+    }
+
+    public static void task13() {
+        System.out.println("1.8 Методы. Повышенный уровень. Задание 5");
+        String findDuplicates = "aabccddefgghiijjkk";
+        toRepeats(findDuplicates);
+    }
+
+    public static void task14() {
+        System.out.println("1.8 Методы. Повышенный уровень. Задание 4");
     }
 }
 
