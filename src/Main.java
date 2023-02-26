@@ -92,24 +92,38 @@ public class Main {
     public static void task5() {
         System.out.println("1.5 - 1.6 Массивы. Повышенная сложность Задача 7");
         int[] arr = {5, 4, 3, 2, 1};
-        for (int i = arr.length - 1; i >= 0; i--) {
-            if (i == 0) {
-                System.out.print(arr[i]);
-            } else {
-                System.out.print(+arr[i] + ", ");
-            }
+        int rightIndex = arr.length-1;
+        int leftIndex = 0;
+        int temp;
+        while (leftIndex < rightIndex) {
+            temp = arr[leftIndex];
+            arr[leftIndex] = arr[rightIndex];
+            arr[rightIndex] = temp;
+            leftIndex++;
+            rightIndex--;
         }
-    }
+        System.out.println(Arrays.toString(arr));
+        System.out.println();
+        }
 
     public static void task6() {
         System.out.println("1.5 - 1.6 Массивы. Очень сложно. Задание 8");
         int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
-        for (int i = 0; i < arr.length - 1; i++)
-            for (int j = 0; j < arr.length - 1; j++) {
-                if (arr[i] + arr[j] == -2) {
-                    System.out.println(arr[i] + " , " + arr[j]);
-                }
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        int sum = -2;
+        int left = 0;
+        int right = arr.length - 1;
+        while (left != right) {
+            if (arr[left] + arr[right] < sum) {
+                left++;
+            } else if (arr[left] + arr[right] > sum) {
+                right--;
+            } else {
+                System.out.println(arr[left] + " " + arr[right]);
+                break;
             }
+        }
     }
 
     public static void task7() {
@@ -139,6 +153,7 @@ public class Main {
     public static void task9() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 6");
         String fullName = "ivanov ivan ivanovich";
+
 
 
     }
