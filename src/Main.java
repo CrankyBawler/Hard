@@ -153,9 +153,17 @@ public class Main {
     public static void task9() {
         System.out.println("1.7 Строки. Повышенная сложность. Задание 6");
         String fullName = "ivanov ivan ivanovich";
-
-
-
+        char[] phrase;
+        phrase = fullName.toCharArray();
+        phrase[0] = Character.toUpperCase(phrase[0]);
+        for (int i = 0; i < phrase.length; i++) {
+            if (phrase[i] == ' ') {
+                phrase[i + 1] = Character.toUpperCase(phrase[i + 1]);
+            }
+        }
+        String fullNameEnd = String.valueOf(phrase);
+        System.out.println(fullNameEnd);
+        System.out.println();
     }
 
     public static void task10() {
